@@ -7,18 +7,28 @@
 	<link rel="stylesheet" href="">
 </head>
 <body>
+	<h1>Lista de comandos de Git</h1>
+	<P>Con estos comandos configuramos o cargamos los valores inicales del entorno</P>
 <p>git init</p>
 <p>git config --global user.name"Nombre"</p>
 <p>git config --global user.email Correoelectronico@mail.com</p>
+<p>Con el siguiente <b>git config --list</b> checamos que tengamos realmente la configuracion lista para trabajar una vez hecha continuar</p>
+<hr>
+<p>Con este comando le estamos diciendo que archivo estamos incluyendo dando su nombre y extension del mismo para empezar el control de versionamiento sobre el nombre del archivo dado</p>
+<b><p>git add nombre.extension</p></b>
+<p>Con este comando asignas el nombre o comentario asignado al archivo previamente adicionado con add recuerda siempre tener un distintivo relacionado con el archivo que te recuerde el cambio</p>
 
-<p>git config --list</p>
+<p>con el siguientes comando consultas el estado de los directorios</p>
+<p><b>git status -s</b></p> 
+para agregar un cambio en la version primero se debe teclear 
+<p><b>git add nombre.extension</b></p>
+despues
+<p><b>git commit -m "Comentario o nombre que te ayude a identificar el cambio sobre la version"</b></p>cada que quieras cargar un cambio
 
-<h1>Lista de comandos de Git</h1>
-<p>git commit -m "nombre asignado en el inicio"</p>
-<p>git commit -m "nombre de la modificacion"</p>
-<p>git add nombre.extension</p>
-<p>git status -s</p> 
-
+<p>Con el siguiente comando solicitas las peticiones versionadas o en su defecto te imprime el listado con el nombre de cambio dado con el comentario que se le dio</p>
+<p><b>git log --oneline</b></p>
+<p>con este solamente indicas las version a cargar OJO: tomar en cuenta que si cargas una anterior desara las posteriores</p>
+<p><b>git reset --hard iddecambio</b></p>
 <p></p>
 </body>
 </html>
